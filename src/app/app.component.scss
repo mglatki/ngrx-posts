@@ -1,0 +1,28 @@
+:host {
+  display: grid;
+  grid-template-rows: 1fr 3rem;
+
+  app-navigation {
+    height: 3rem;
+
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 820px) {
+  :host {
+    grid-template-columns: 1fr 12rem;
+    grid-template-rows: 1fr;
+
+    app-navigation {
+      height: 100%;
+      width: 10rem;
+
+      position: fixed;
+      bottom: unset;
+      top: 0;
+      right: 0;
+    }
+  }
+}
