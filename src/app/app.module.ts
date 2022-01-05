@@ -9,9 +9,10 @@ import { StoreModule } from '@ngrx/store';
 import { postsReducer } from './reducers/posts.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { PostEffects } from './effects/effects.posts';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
-  declarations: [AppComponent, PostsComponent],
+  declarations: [AppComponent, PostsComponent, NavigationComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
