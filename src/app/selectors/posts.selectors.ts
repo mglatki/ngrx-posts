@@ -1,8 +1,8 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { Post } from '../models/posts';
+import { AppState } from '../models/AppState';
 
-export const selectPosts = createFeatureSelector<ReadonlyArray<Post>>(`posts`);
+export const selectPosts = createFeatureSelector<AppState>(`appState`);
 
-export const selectCurrentPosts = createSelector(selectPosts, (posts) => {
-  return posts;
+export const selectCurrentPosts = createSelector(selectPosts, (appState) => {
+  return appState.posts;
 });

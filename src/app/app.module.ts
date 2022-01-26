@@ -17,7 +17,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    StoreModule.forRoot({ posts: postsReducer }, {}),
+    StoreModule.forRoot({ appState: postsReducer }, {}),
     EffectsModule.forRoot([PostEffects]),
   ],
   providers: [],
